@@ -1,0 +1,86 @@
+0 info it worked if it ends with ok
+1 verbose cli [ '/home/ubuntu/.nvm/v0.10.35/bin/node',
+1 verbose cli   '/home/ubuntu/.nvm/v0.10.35/bin/npm',
+1 verbose cli   'install',
+1 verbose cli   '-g',
+1 verbose cli   'express-generatior' ]
+2 info using npm@1.4.28
+3 info using node@v0.10.35
+4 verbose cache add [ 'express-generatior', null ]
+5 verbose cache add name=undefined spec="express-generatior" args=["express-generatior",null]
+6 verbose parsed url { protocol: null,
+6 verbose parsed url   slashes: null,
+6 verbose parsed url   auth: null,
+6 verbose parsed url   host: null,
+6 verbose parsed url   port: null,
+6 verbose parsed url   hostname: null,
+6 verbose parsed url   hash: null,
+6 verbose parsed url   search: null,
+6 verbose parsed url   query: null,
+6 verbose parsed url   pathname: 'express-generatior',
+6 verbose parsed url   path: 'express-generatior',
+6 verbose parsed url   href: 'express-generatior' }
+7 silly lockFile deba3df0-express-generatior express-generatior
+8 verbose lock express-generatior /home/ubuntu/.npm/deba3df0-express-generatior.lock
+9 silly lockFile deba3df0-express-generatior express-generatior
+10 silly lockFile deba3df0-express-generatior express-generatior
+11 verbose addNamed [ 'express-generatior', '' ]
+12 verbose addNamed [ null, '*' ]
+13 silly lockFile c08c2d04-express-generatior express-generatior@
+14 verbose lock express-generatior@ /home/ubuntu/.npm/c08c2d04-express-generatior.lock
+15 silly addNameRange { name: 'express-generatior', range: '*', hasData: false }
+16 verbose request where is /express-generatior
+17 verbose request registry https://registry.npmjs.org/
+18 verbose request id 4a5545fe65d4edb0
+19 verbose url raw /express-generatior
+20 verbose url resolving [ 'https://registry.npmjs.org/', './express-generatior' ]
+21 verbose url resolved https://registry.npmjs.org/express-generatior
+22 verbose request where is https://registry.npmjs.org/express-generatior
+23 info trying registry request attempt 1 at 04:12:11
+24 http GET https://registry.npmjs.org/express-generatior
+25 http 404 https://registry.npmjs.org/express-generatior
+26 verbose headers { date: 'Wed, 11 Mar 2015 04:12:12 GMT',
+26 verbose headers   server: 'CouchDB/1.6.1 (Erlang OTP/R14B04)',
+26 verbose headers   'content-type': 'application/json',
+26 verbose headers   'cache-control': 'max-age=0',
+26 verbose headers   'content-length': '52',
+26 verbose headers   'accept-ranges': 'bytes',
+26 verbose headers   via: '1.1 varnish',
+26 verbose headers   age: '0',
+26 verbose headers   'x-served-by': 'cache-dfw1821-DFW',
+26 verbose headers   'x-cache': 'MISS',
+26 verbose headers   'x-cache-hits': '0',
+26 verbose headers   'x-timer': 'S1426047131.866218,VS0,VE190',
+26 verbose headers   'keep-alive': 'timeout=10, max=50',
+26 verbose headers   connection: 'Keep-Alive' }
+27 silly registry.get cb [ 404,
+27 silly registry.get   { date: 'Wed, 11 Mar 2015 04:12:12 GMT',
+27 silly registry.get     server: 'CouchDB/1.6.1 (Erlang OTP/R14B04)',
+27 silly registry.get     'content-type': 'application/json',
+27 silly registry.get     'cache-control': 'max-age=0',
+27 silly registry.get     'content-length': '52',
+27 silly registry.get     'accept-ranges': 'bytes',
+27 silly registry.get     via: '1.1 varnish',
+27 silly registry.get     age: '0',
+27 silly registry.get     'x-served-by': 'cache-dfw1821-DFW',
+27 silly registry.get     'x-cache': 'MISS',
+27 silly registry.get     'x-cache-hits': '0',
+27 silly registry.get     'x-timer': 'S1426047131.866218,VS0,VE190',
+27 silly registry.get     'keep-alive': 'timeout=10, max=50',
+27 silly registry.get     connection: 'Keep-Alive' } ]
+28 silly lockFile c08c2d04-express-generatior express-generatior@
+29 silly lockFile c08c2d04-express-generatior express-generatior@
+30 error 404 404 Not Found: express-generatior
+30 error 404
+30 error 404 'express-generatior' is not in the npm registry.
+30 error 404 You should bug the author to publish it
+30 error 404
+30 error 404 Note that you can also install from a
+30 error 404 tarball, folder, or http url, or git url.
+31 error System Linux 3.14.13-c9
+32 error command "/home/ubuntu/.nvm/v0.10.35/bin/node" "/home/ubuntu/.nvm/v0.10.35/bin/npm" "install" "-g" "express-generatior"
+33 error cwd /home/ubuntu/workspace
+34 error node -v v0.10.35
+35 error npm -v 1.4.28
+36 error code E404
+37 verbose exit [ 1, true ]
