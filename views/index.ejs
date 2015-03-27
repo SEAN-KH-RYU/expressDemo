@@ -1,20 +1,42 @@
-
 <!DOCTYPE html>
 <html>
   <head>
     <title><%= title %></title>
-    <link rel='stylesheet' href='/stylesheets/bootstrap.min.css' />
-    <link rel='stylesheet' href='/stylesheets/app.css' />
+    
+    <!-- CSS Section -->
+    <link rel="stylesheet" href="/css/reset.css">
+    <link rel="stylesheet" href="/css/bootstrap.min.css">
+    <link rel="stylesheet" href="/css/bootstrap-theme.min.css">
+    <link rel="stylesheet" href="/css/app.css">
+
+    <link href="css/normalize.css" rel="stylesheet" />
+    <link href="css/foundation.css" rel="stylesheet" />
   </head>
   <body>
-    
     <% include partials/header.ejs %>
-    <% include partials/content.ejs %>
+    
+    <%    if(title == "About Me")  {%>
+    <%    include partials/about.ejs %>
+    <%    }  %>     
+    
+    <%    if(title == "Contact Me")  {%>
+    <%    include partials/contact.ejs %>
+    <%    }  %>   
+    
+    <%    if(title == "Products")  {%>
+    <%    include partials/products.ejs %>
+    <%    }  %>   
+    
+    <%    if(title == "Services")  {%>
+    <%    include partials/services.ejs %>
+    <%    }  %>      
+    
     <% include partials/footer.ejs %>
     
-    <!-- JavaScript Section -->
-    <script src="/javascripts/jquery.js"></script>
-    <script src="/javascripts/bootstrap.min.js"></script>
-    <script src="/javascripts/custom.js"></script>
+    
+    <script src="/Scripts/lib/jquery.js"></script>
+    <script src="/Scripts/lib/bootstrap.min.js"></script>
+    <script src="/Scripts/lib/angular.min.js"></script>
+    <script src="/Scripts/app.js"></script>
   </body>
 </html>
