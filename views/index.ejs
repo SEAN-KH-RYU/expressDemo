@@ -11,28 +11,46 @@
 
     <link href="css/normalize.css" rel="stylesheet" />
     <link href="css/foundation.css" rel="stylesheet" />
+
+    <script src="http://maps.googleapis.com/maps/api/js"></script>
+    <script>
+      function initialize() {
+          var mapProp = {
+              center: new google.maps.LatLng(43.688153, -79.394124),
+              zoom: 15,
+              mapTypeId: google.maps.MapTypeId.ROADMAP
+          };
+          var map = new google.maps.Map(document.getElementById("googleMap"), mapProp);
+      }
+      google.maps.event.addDomListener(window, 'load', initialize);
+  </script>
   </head>
   <body>
     <% include partials/header.ejs %>
     
     <%    if(title == "About Me")  {%>
     <%    include partials/about.ejs %>
+    <%    menuActive = "active" %>
     <%    }  %>     
     
     <%    if(title == "Contact Me")  {%>
     <%    include partials/contact.ejs %>
+    <%    menuActive = "active" %>
     <%    }  %>   
     
     <%    if(title == "Products")  {%>
     <%    include partials/products.ejs %>
+    <%    menuActive = "active" %>
     <%    }  %>   
 
     <%    if(title == "Skills")  {%>
     <%    include partials/skills.ejs %>
+    <%    menuActive = "active" %>
     <%    }  %> 
     
     <%    if(title == "Services")  {%>
     <%    include partials/services.ejs %>
+    <%    menuActive = "active" %>
     <%    }  %>      
     
     <%    if(title == "Portfolio Home")  {%>
