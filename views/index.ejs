@@ -26,17 +26,27 @@
     <%    if(title == "Products")  {%>
     <%    include partials/products.ejs %>
     <%    }  %>   
+
+    <%    if(title == "Skills")  {%>
+    <%    include partials/skills.ejs %>
+    <%    }  %> 
     
     <%    if(title == "Services")  {%>
     <%    include partials/services.ejs %>
     <%    }  %>      
     
+    <%    if(title == "Portfolio Home")  {%>
+    <%    include partials/home.ejs %>
+    <%    }  %>     
+    
     <% include partials/footer.ejs %>
     
-    
+    <!-- JavaScript Section -->
     <script src="/Scripts/lib/jquery.js"></script>
     <script src="/Scripts/lib/bootstrap.min.js"></script>
     <script src="/Scripts/lib/angular.min.js"></script>
-    <script src="/Scripts/app.js"></script>
+    <script src="Scripts/lib/foundation.min.js"></script>
+    <script>$(document).foundation();</script>
+    <script src="Scripts/lib/app.js"></script>
   </body>
 </html>
